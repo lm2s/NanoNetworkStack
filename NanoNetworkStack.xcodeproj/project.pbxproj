@@ -7,12 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F378E9FF2075223400CFBCC3 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E9FE2075223400CFBCC3 /* Mappable.swift */; };
+		F39140C42074DFF900A7871B /* Authenticatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39140C32074DFF900A7871B /* Authenticatable.swift */; };
+		F3EEAEB7207D374700EBB84E /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EEAEB6207D374700EBB84E /* Result.framework */; };
 		F3F6725A207247F200F0F7ED /* NanoNetworkStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F67250207247F200F0F7ED /* NanoNetworkStack.framework */; };
 		F3F6725F207247F200F0F7ED /* NanoNetworkStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F6725E207247F200F0F7ED /* NanoNetworkStackTests.swift */; };
 		F3F67261207247F200F0F7ED /* NanoNetworkStack.h in Headers */ = {isa = PBXBuildFile; fileRef = F3F67253207247F200F0F7ED /* NanoNetworkStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3F6726B2072480500F0F7ED /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F6726A2072480500F0F7ED /* NetworkRequest.swift */; };
+		F3F6726C2072480500F0F7ED /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F6726A2072480500F0F7ED /* NetworkRequest.swift */; };
+		F3F672772073839D00F0F7ED /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F672762073839D00F0F7ED /* NetworkService.swift */; };
+		F3F672782073839D00F0F7ED /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F672762073839D00F0F7ED /* NetworkService.swift */; };
+		F3F67298207397CA00F0F7ED /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F67297207397CA00F0F7ED /* NetworkError.swift */; };
+		F3F67299207397CA00F0F7ED /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F67297207397CA00F0F7ED /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F3EEAE8E207D36B800EBB84E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3EEAE84207D36B800EBB84E /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D45480571A9572F5009D7229;
+			remoteInfo = "Result-Mac";
+		};
+		F3EEAE90207D36B800EBB84E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3EEAE84207D36B800EBB84E /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D45480671A9572F5009D7229;
+			remoteInfo = "Result-MacTests";
+		};
+		F3EEAE92207D36B800EBB84E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3EEAE84207D36B800EBB84E /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D454807D1A957361009D7229;
+			remoteInfo = "Result-iOS";
+		};
+		F3EEAE94207D36B800EBB84E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3EEAE84207D36B800EBB84E /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D45480871A957362009D7229;
+			remoteInfo = "Result-iOSTests";
+		};
+		F3EEAE96207D36B800EBB84E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3EEAE84207D36B800EBB84E /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57FCDE471BA280DC00130C48;
+			remoteInfo = "Result-tvOS";
+		};
+		F3EEAE98207D36B800EBB84E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3EEAE84207D36B800EBB84E /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57FCDE541BA280E000130C48;
+			remoteInfo = "Result-tvOSTests";
+		};
+		F3EEAE9A207D36B800EBB84E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3EEAE84207D36B800EBB84E /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D03579A31B2B788F005D26AE;
+			remoteInfo = "Result-watchOS";
+		};
 		F3F6725B207247F200F0F7ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F3F67247207247F200F0F7ED /* Project object */;
@@ -23,12 +81,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F378E9FE2075223400CFBCC3 /* Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
+		F39140C32074DFF900A7871B /* Authenticatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticatable.swift; sourceTree = "<group>"; };
+		F3EEAE84207D36B800EBB84E /* Result.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Result.xcodeproj; path = Vendor/Result/Result.xcodeproj; sourceTree = "<group>"; };
+		F3EEAEB6207D374700EBB84E /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F67250207247F200F0F7ED /* NanoNetworkStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NanoNetworkStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F67253207247F200F0F7ED /* NanoNetworkStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NanoNetworkStack.h; sourceTree = "<group>"; };
 		F3F67254207247F200F0F7ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3F67259207247F200F0F7ED /* NanoNetworkStackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NanoNetworkStackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F6725E207247F200F0F7ED /* NanoNetworkStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoNetworkStackTests.swift; sourceTree = "<group>"; };
 		F3F67260207247F200F0F7ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3F6726A2072480500F0F7ED /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		F3F672762073839D00F0F7ED /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F3F67297207397CA00F0F7ED /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3EEAEB7207D374700EBB84E /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +116,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3EEAE85207D36B800EBB84E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3EEAE8F207D36B800EBB84E /* Result.framework */,
+				F3EEAE91207D36B800EBB84E /* Result-MacTests.xctest */,
+				F3EEAE93207D36B800EBB84E /* Result.framework */,
+				F3EEAE95207D36B800EBB84E /* Result-iOSTests.xctest */,
+				F3EEAE97207D36B800EBB84E /* Result.framework */,
+				F3EEAE99207D36B800EBB84E /* Result-tvOSTests.xctest */,
+				F3EEAE9B207D36B800EBB84E /* Result.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F3F67246207247F200F0F7ED = {
 			isa = PBXGroup;
 			children = (
 				F3F67252207247F200F0F7ED /* NanoNetworkStack */,
 				F3F6725D207247F200F0F7ED /* NanoNetworkStackTests */,
 				F3F67251207247F200F0F7ED /* Products */,
+				F3F672952073975400F0F7ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +152,14 @@
 		F3F67252207247F200F0F7ED /* NanoNetworkStack */ = {
 			isa = PBXGroup;
 			children = (
+				F3EEAE84207D36B800EBB84E /* Result.xcodeproj */,
 				F3F67253207247F200F0F7ED /* NanoNetworkStack.h */,
 				F3F67254207247F200F0F7ED /* Info.plist */,
+				F39140C32074DFF900A7871B /* Authenticatable.swift */,
+				F3F6726A2072480500F0F7ED /* NetworkRequest.swift */,
+				F3F67297207397CA00F0F7ED /* NetworkError.swift */,
+				F3F672762073839D00F0F7ED /* NetworkService.swift */,
+				F378E9FE2075223400CFBCC3 /* Mappable.swift */,
 			);
 			path = NanoNetworkStack;
 			sourceTree = "<group>";
@@ -84,6 +171,14 @@
 				F3F67260207247F200F0F7ED /* Info.plist */,
 			);
 			path = NanoNetworkStackTests;
+			sourceTree = "<group>";
+		};
+		F3F672952073975400F0F7ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3EEAEB6207D374700EBB84E /* Result.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +243,7 @@
 				TargetAttributes = {
 					F3F6724F207247F200F0F7ED = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					F3F67258207247F200F0F7ED = {
 						CreatedOnToolsVersion = 9.3;
@@ -164,6 +260,12 @@
 			mainGroup = F3F67246207247F200F0F7ED;
 			productRefGroup = F3F67251207247F200F0F7ED /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F3EEAE85207D36B800EBB84E /* Products */;
+					ProjectRef = F3EEAE84207D36B800EBB84E /* Result.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F3F6724F207247F200F0F7ED /* NanoNetworkStack */,
@@ -171,6 +273,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F3EEAE8F207D36B800EBB84E /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = F3EEAE8E207D36B800EBB84E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F3EEAE91207D36B800EBB84E /* Result-MacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-MacTests.xctest";
+			remoteRef = F3EEAE90207D36B800EBB84E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F3EEAE93207D36B800EBB84E /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = F3EEAE92207D36B800EBB84E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F3EEAE95207D36B800EBB84E /* Result-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-iOSTests.xctest";
+			remoteRef = F3EEAE94207D36B800EBB84E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F3EEAE97207D36B800EBB84E /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = F3EEAE96207D36B800EBB84E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F3EEAE99207D36B800EBB84E /* Result-tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-tvOSTests.xctest";
+			remoteRef = F3EEAE98207D36B800EBB84E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F3EEAE9B207D36B800EBB84E /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = F3EEAE9A207D36B800EBB84E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F3F6724E207247F200F0F7ED /* Resources */ = {
@@ -194,6 +348,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F67298207397CA00F0F7ED /* NetworkError.swift in Sources */,
+				F378E9FF2075223400CFBCC3 /* Mappable.swift in Sources */,
+				F3F6726B2072480500F0F7ED /* NetworkRequest.swift in Sources */,
+				F3F672772073839D00F0F7ED /* NetworkService.swift in Sources */,
+				F39140C42074DFF900A7871B /* Authenticatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +360,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3F67299207397CA00F0F7ED /* NetworkError.swift in Sources */,
 				F3F6725F207247F200F0F7ED /* NanoNetworkStackTests.swift in Sources */,
+				F3F6726C2072480500F0F7ED /* NetworkRequest.swift in Sources */,
+				F3F672782073839D00F0F7ED /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +501,7 @@
 		F3F67265207247F200F0F7ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +510,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NanoNetworkStack/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -355,6 +519,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.chippd.NanoNetworkStack;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +528,7 @@
 		F3F67266207247F200F0F7ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -371,6 +537,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NanoNetworkStack/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,6 +554,7 @@
 		F3F67268207247F200F0F7ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NanoNetworkStackTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +572,7 @@
 		F3F67269207247F200F0F7ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NanoNetworkStackTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
