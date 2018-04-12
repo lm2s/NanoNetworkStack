@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F378E9FF2075223400CFBCC3 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E9FE2075223400CFBCC3 /* Mappable.swift */; };
 		F39140C42074DFF900A7871B /* Authenticatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39140C32074DFF900A7871B /* Authenticatable.swift */; };
-		F3EEAEB7207D374700EBB84E /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EEAEB6207D374700EBB84E /* Result.framework */; };
 		F3F6725A207247F200F0F7ED /* NanoNetworkStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F67250207247F200F0F7ED /* NanoNetworkStack.framework */; };
 		F3F6725F207247F200F0F7ED /* NanoNetworkStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F6725E207247F200F0F7ED /* NanoNetworkStackTests.swift */; };
 		F3F67261207247F200F0F7ED /* NanoNetworkStack.h in Headers */ = {isa = PBXBuildFile; fileRef = F3F67253207247F200F0F7ED /* NanoNetworkStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -22,55 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F3EEAE8E207D36B800EBB84E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3EEAE84207D36B800EBB84E /* Result.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D45480571A9572F5009D7229;
-			remoteInfo = "Result-Mac";
-		};
-		F3EEAE90207D36B800EBB84E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3EEAE84207D36B800EBB84E /* Result.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D45480671A9572F5009D7229;
-			remoteInfo = "Result-MacTests";
-		};
-		F3EEAE92207D36B800EBB84E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3EEAE84207D36B800EBB84E /* Result.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D454807D1A957361009D7229;
-			remoteInfo = "Result-iOS";
-		};
-		F3EEAE94207D36B800EBB84E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3EEAE84207D36B800EBB84E /* Result.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D45480871A957362009D7229;
-			remoteInfo = "Result-iOSTests";
-		};
-		F3EEAE96207D36B800EBB84E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3EEAE84207D36B800EBB84E /* Result.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 57FCDE471BA280DC00130C48;
-			remoteInfo = "Result-tvOS";
-		};
-		F3EEAE98207D36B800EBB84E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3EEAE84207D36B800EBB84E /* Result.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 57FCDE541BA280E000130C48;
-			remoteInfo = "Result-tvOSTests";
-		};
-		F3EEAE9A207D36B800EBB84E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3EEAE84207D36B800EBB84E /* Result.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D03579A31B2B788F005D26AE;
-			remoteInfo = "Result-watchOS";
-		};
 		F3F6725B207247F200F0F7ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F3F67247207247F200F0F7ED /* Project object */;
@@ -83,7 +33,6 @@
 /* Begin PBXFileReference section */
 		F378E9FE2075223400CFBCC3 /* Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
 		F39140C32074DFF900A7871B /* Authenticatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticatable.swift; sourceTree = "<group>"; };
-		F3EEAE84207D36B800EBB84E /* Result.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Result.xcodeproj; path = Vendor/Result/Result.xcodeproj; sourceTree = "<group>"; };
 		F3EEAEB6207D374700EBB84E /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F67250207247F200F0F7ED /* NanoNetworkStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NanoNetworkStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F67253207247F200F0F7ED /* NanoNetworkStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NanoNetworkStack.h; sourceTree = "<group>"; };
@@ -101,7 +50,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3EEAEB7207D374700EBB84E /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,20 +64,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F3EEAE85207D36B800EBB84E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F3EEAE8F207D36B800EBB84E /* Result.framework */,
-				F3EEAE91207D36B800EBB84E /* Result-MacTests.xctest */,
-				F3EEAE93207D36B800EBB84E /* Result.framework */,
-				F3EEAE95207D36B800EBB84E /* Result-iOSTests.xctest */,
-				F3EEAE97207D36B800EBB84E /* Result.framework */,
-				F3EEAE99207D36B800EBB84E /* Result-tvOSTests.xctest */,
-				F3EEAE9B207D36B800EBB84E /* Result.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		F3F67246207247F200F0F7ED = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +86,6 @@
 		F3F67252207247F200F0F7ED /* NanoNetworkStack */ = {
 			isa = PBXGroup;
 			children = (
-				F3EEAE84207D36B800EBB84E /* Result.xcodeproj */,
 				F3F67253207247F200F0F7ED /* NanoNetworkStack.h */,
 				F3F67254207247F200F0F7ED /* Info.plist */,
 				F39140C32074DFF900A7871B /* Authenticatable.swift */,
@@ -260,12 +193,6 @@
 			mainGroup = F3F67246207247F200F0F7ED;
 			productRefGroup = F3F67251207247F200F0F7ED /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = F3EEAE85207D36B800EBB84E /* Products */;
-					ProjectRef = F3EEAE84207D36B800EBB84E /* Result.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				F3F6724F207247F200F0F7ED /* NanoNetworkStack */,
@@ -273,58 +200,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		F3EEAE8F207D36B800EBB84E /* Result.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Result.framework;
-			remoteRef = F3EEAE8E207D36B800EBB84E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F3EEAE91207D36B800EBB84E /* Result-MacTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Result-MacTests.xctest";
-			remoteRef = F3EEAE90207D36B800EBB84E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F3EEAE93207D36B800EBB84E /* Result.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Result.framework;
-			remoteRef = F3EEAE92207D36B800EBB84E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F3EEAE95207D36B800EBB84E /* Result-iOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Result-iOSTests.xctest";
-			remoteRef = F3EEAE94207D36B800EBB84E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F3EEAE97207D36B800EBB84E /* Result.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Result.framework;
-			remoteRef = F3EEAE96207D36B800EBB84E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F3EEAE99207D36B800EBB84E /* Result-tvOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Result-tvOSTests.xctest";
-			remoteRef = F3EEAE98207D36B800EBB84E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F3EEAE9B207D36B800EBB84E /* Result.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Result.framework;
-			remoteRef = F3EEAE9A207D36B800EBB84E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F3F6724E207247F200F0F7ED /* Resources */ = {
