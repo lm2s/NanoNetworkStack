@@ -9,7 +9,7 @@
 import Foundation
 import Result
 
-open class NetworkService {
+open class NetworkService: NSObject, URLSessionTaskDelegate {
     private var successCodes: CountableRange<Int> = 200..<299
     private var failureCodes: CountableRange<Int> = 400..<499
     
@@ -22,10 +22,6 @@ open class NetworkService {
     private var urlSession = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: OperationQueue())
     open var baseUrl: URL { fatalError("baseUrl must be implemented in subclass") }
     
-    public init() {
-        
-    }
-    
     public func execute(request: NetworkRequest) {
         request.networkService = self
         
@@ -35,20 +31,31 @@ open class NetworkService {
     internal func performRequest(request: NetworkRequest) {
         let requestUrl = baseUrl.appendingPathComponent(request.endpoint)
         var urlRequest: URLRequest = URLRequest(url: requestUrl, cachePolicy: request.cachePolicy, timeoutInterval: request.timeoutInterval)
+        urlRequest.httpMethod = request.method.rawValue
         
         if let jsonRequest = request as? NetworkRequestJSONProtocol {
             let json = try! JSONSerialization.data(withJSONObject: jsonRequest.parameters, options: [])
             urlRequest.httpBody = json
             
             urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        } else if let formUrlEncodedProtocol = request as? NetworkRequestFormURLEncodedProtocol {
+            urlRequest.addValue("application/json", forHTTPHeaderField: "Accept")
+        } else if let formUrlEncodedRequest = request as? NetworkRequestFormURLEncodedProtocol {
+            let params: [String] = formUrlEncodedRequest.parameters.map {
+                return "\($0.key)=\($0.value.percentEscaped())"
+            }
+            urlRequest.httpBody = params.joined(separator: "&").data(using: .utf8)
             
+            urlRequest.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+            urlRequest.addValue("\(urlRequest.httpBody?.count ?? 0)", forHTTPHeaderField: "Content-Length")
+            urlRequest.addValue("utf-8", forHTTPHeaderField: "Charset")
+            
+            print(String(data: urlRequest.httpBody!, encoding: .utf8) ?? "")
         }
         
         if let auth = request.networkService as? Authenticatable, request.authenticate {
             auth.authenticate(request: &urlRequest)
         }
-        
+
         request.task = urlSession.dataTask(with: urlRequest) { (data, response, error) in
             defer { request.finish(true) }
             
@@ -66,6 +73,12 @@ open class NetworkService {
         }
         request.task?.resume()
     }
+    
+    public func urlSession(_ session: URLSession, task: URLSessionTask, willPerformHTTPRedirection response: HTTPURLResponse, newRequest request: URLRequest, completionHandler: @escaping (URLRequest?) -> Void) {
+        
+        print("redirect!")
+    }
+    
 }
 
 

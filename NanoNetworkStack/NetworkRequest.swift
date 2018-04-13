@@ -9,8 +9,8 @@
 import Foundation
 import Result
 
-public enum HTTPMethod {
-    case get, post, put, delete
+public enum HTTPMethod: String {
+    case get = "GET", post = "POST", put = "PUT", delete = "DELETE"
 }
 
 public protocol NetworkRequestProtocol {
@@ -26,7 +26,7 @@ public protocol NetworkRequestJSONProtocol {
 }
 
 public protocol NetworkRequestFormURLEncodedProtocol {
-    var parameters: [String: Any] { get }
+    var parameters: [String: String] { get }
 }
 
 open class NetworkRequest: Operation, NetworkRequestProtocol {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F352DEFD207FDC140087CD47 /* String+Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F352DEFC207FDC140087CD47 /* String+Encoding.swift */; };
 		F378E9FF2075223400CFBCC3 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E9FE2075223400CFBCC3 /* Mappable.swift */; };
 		F39140C42074DFF900A7871B /* Authenticatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39140C32074DFF900A7871B /* Authenticatable.swift */; };
 		F3F6725A207247F200F0F7ED /* NanoNetworkStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F67250207247F200F0F7ED /* NanoNetworkStack.framework */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F352DEFC207FDC140087CD47 /* String+Encoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Encoding.swift"; sourceTree = "<group>"; };
 		F378E9FE2075223400CFBCC3 /* Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
 		F39140C32074DFF900A7871B /* Authenticatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authenticatable.swift; sourceTree = "<group>"; };
 		F3EEAEB6207D374700EBB84E /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F352DEFB207FDBFB0087CD47 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F352DEFC207FDC140087CD47 /* String+Encoding.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F3F67246207247F200F0F7ED = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +96,7 @@
 		F3F67252207247F200F0F7ED /* NanoNetworkStack */ = {
 			isa = PBXGroup;
 			children = (
+				F352DEFB207FDBFB0087CD47 /* Extensions */,
 				F3F67253207247F200F0F7ED /* NanoNetworkStack.h */,
 				F3F67254207247F200F0F7ED /* Info.plist */,
 				F39140C32074DFF900A7871B /* Authenticatable.swift */,
@@ -224,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3F67298207397CA00F0F7ED /* NetworkError.swift in Sources */,
+				F352DEFD207FDC140087CD47 /* String+Encoding.swift in Sources */,
 				F378E9FF2075223400CFBCC3 /* Mappable.swift in Sources */,
 				F3F6726B2072480500F0F7ED /* NetworkRequest.swift in Sources */,
 				F3F672772073839D00F0F7ED /* NetworkService.swift in Sources */,
